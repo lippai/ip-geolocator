@@ -16,7 +16,6 @@ public interface GeoLocator {
     static GeoLocator newInstance() {
         return Feign.builder()
             .decoder(new JacksonDecoder())
-            .target(GeoLocator.class, "http://ip-api.com/json/");
+            .target(GeoLocator.class, "http://ip-api.com/json/");       
+ }
     }
-
-}
